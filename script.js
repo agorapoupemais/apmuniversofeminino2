@@ -58,6 +58,11 @@ function isWhatsAppConfigured() {
 function handleWhatsAppClick(event) {
   event.preventDefault();
 
+ // Meta Pixel — registra o clique como Lead
+  if (typeof fbq === "function") {
+    fbq("track", "Lead");
+  }
+
   const location = event.currentTarget.dataset.cta || "unknown";
 
   if (!isWhatsAppConfigured()) {
@@ -98,12 +103,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const year = document.getElementById("current-year");
-  if (year) year.textContent = new Date().getFullYear(){
-
-        if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-        }
-
-        // restante do código do WhatsApp
-    });
+  if (year) year.textContent = new Date().getFullYear();
 });
