@@ -98,5 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const year = document.getElementById("current-year");
-  if (year) year.textContent = new Date().getFullYear();
+  if (year) year.textContent = new Date().getFullYear(){
+
+        if (typeof fbq === 'function') {
+            fbq('track', 'Lead');
+        }
+
+        // restante do código do WhatsApp
+    });
 });
