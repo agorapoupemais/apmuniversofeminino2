@@ -3,7 +3,7 @@
 // ==========================================
 
 // Cole aqui o link real do seu grupo do WhatsApp.
-const WHATSAPP_GROUP_URL = "https://garimpa.store/c/universo-feminino-hvtoo";
+const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/DTci8kcelqDJA5ZPgK2umh";
 
 // Cole aqui o ID do seu Meta Pixel.
 // Deixe vazio enquanto não estiver configurado.
